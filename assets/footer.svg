@@ -1,39 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 90" width="900" height="90" role="img" aria-label="footer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="900" height="180" role="img" aria-label="Feby Awie footer">
 <defs>
-<linearGradient id="fbg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1800" y2="0" spreadMethod="reflect">
-  <stop offset="0" stop-color="#0b0814"><animate attributeName="stop-color" values="#0b0814;#160a2c;#0b0814" dur="18s" repeatCount="indefinite"/></stop>
-  <stop offset=".3" stop-color="#2d0a4e"><animate attributeName="stop-color" values="#2d0a4e;#4a148c;#2d0a4e" dur="14s" repeatCount="indefinite"/></stop>
-  <stop offset=".6" stop-color="#4a148c"><animate attributeName="stop-color" values="#4a148c;#3c096c;#5a189a;#4a148c" dur="16s" repeatCount="indefinite"/></stop>
-  <stop offset=".85" stop-color="#1a0b2e"><animate attributeName="stop-color" values="#1a0b2e;#2d0a4e;#1a0b2e" dur="12s" repeatCount="indefinite"/></stop>
-  <stop offset="1" stop-color="#0b0814"/>
-  <animateTransform attributeName="gradientTransform" type="translate" values="0 0;-810 0;0 0" dur="26s" repeatCount="indefinite"/>
+<linearGradient id="fbg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="180">
+  <stop offset="0" stop-color="#0a0a0a"><animate attributeName="stop-color" values="#0a0a0a;#0d001a;#0a0a0a" dur="12s" repeatCount="indefinite"/></stop>
+  <stop offset=".5" stop-color="#0d0030"><animate attributeName="stop-color" values="#0d0030;#1a0044;#0d0030" dur="10s" repeatCount="indefinite"/></stop>
+  <stop offset="1" stop-color="#0a0a0a"/>
+  <animateTransform attributeName="gradientTransform" type="rotate" values="0 450 90;5 450 90;0 450 90;-5 450 90;0 450 90" dur="14s" repeatCount="indefinite"/>
 </linearGradient>
-<pattern id="fgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-  <path d="M40 0H0V40" fill="none" stroke="#c77dff" stroke-opacity=".07"/>
+<pattern id="fgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+  <path d="M30 0H0V30" fill="none" stroke="#00f0ff" stroke-opacity=".04"/>
 </pattern>
 <pattern id="fscan" width="4" height="4" patternUnits="userSpaceOnUse">
-  <rect width="4" height="1" fill="#000" opacity=".25"/>
-  <animateTransform attributeName="patternTransform" type="translate" values="0 0;0 4" dur="3s" repeatCount="indefinite"/>
+  <rect width="4" height="1" fill="#000" opacity=".18"/>
+  <animateTransform attributeName="patternTransform" type="translate" values="0 0;0 4" dur="2.5s" repeatCount="indefinite"/>
 </pattern>
 <linearGradient id="fedge" x1="0" x2="1" y1="0" y2="0">
-  <stop offset="0" stop-color="#c77dff" stop-opacity="0"/>
-  <stop offset=".5" stop-color="#e0aaff"/>
-  <stop offset="1" stop-color="#c77dff" stop-opacity="0"/>
+  <stop offset="0" stop-color="#00f0ff" stop-opacity="0"/>
+  <stop offset=".3" stop-color="#ff2bd6"/>
+  <stop offset=".5" stop-color="#00f0ff"/>
+  <stop offset=".7" stop-color="#ff2bd6"/>
+  <stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
 </linearGradient>
 <filter id="fglow" x="-20%" y="-50%" width="140%" height="200%">
   <feGaussianBlur stdDeviation="4" result="b"/>
   <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
 </filter>
 <filter id="fglow2" x="-20%" y="-50%" width="140%" height="200%">
-  <feGaussianBlur stdDeviation="1.6" result="b"/>
+  <feGaussianBlur stdDeviation="1.5" result="b"/>
   <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
 </filter>
 </defs>
 
-<rect x="0" y="0" width="900" height="90" rx="0" fill="url(#fbg)"/><rect x="0" y="0" width="900" height="90" rx="0" fill="url(#fgrid)"/><rect x="0" y="0" width="900" height="90" rx="0" fill="url(#fscan)"/>
-<rect y="0" width="900" height="2" fill="url(#fedge)"/>
-<text x="450" y="46" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-size="18" font-weight="800" fill="#e0aaff" letter-spacing="4" filter="url(#fglow2)">FEBY AWIE // FEBYWI</text>
-<text x="450" y="70" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-size="12" fill="#b388eb" letter-spacing="3">THANKS FOR VISITING . STAY CURIOUS . KEEP BUILDING
-  <animate attributeName="opacity" values="1;.55;1" dur="3s" repeatCount="indefinite"/></text>
+<!-- Background -->
+<rect width="900" height="180" fill="url(#fbg)"/>
+<rect width="900" height="180" fill="url(#fgrid)"/>
+<rect width="900" height="180" fill="url(#fscan)"/>
+
+<!-- Top edge -->
+<rect y="0" width="900" height="2" fill="url(#fedge)" opacity=".7"/>
+
+<!-- Running border top -->
+<rect y="0" width="100" height="2" fill="#00f0ff" opacity=".9" filter="url(#fglow2)">
+  <animate attributeName="x" values="-100;900" dur="3s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Matrix rain in footer -->
+<g font-family="'Courier New',monospace" font-size="10" fill="#00f0ff" opacity=".12">
+  <text x="50"><animate attributeName="y" values="-10;190" dur="5s" begin="0.3s" repeatCount="indefinite"/>01</text>
+  <text x="150"><animate attributeName="y" values="-10;190" dur="4s" begin="1s" repeatCount="indefinite"/>10</text>
+  <text x="250"><animate attributeName="y" values="-10;190" dur="4.5s" begin="0.7s" repeatCount="indefinite"/>01</text>
+  <text x="350"><animate attributeName="y" values="-10;190" dur="3.8s" begin="1.5s" repeatCount="indefinite"/>11</text>
+  <text x="550"><animate attributeName="y" values="-10;190" dur="4.2s" begin="0.5s" repeatCount="indefinite"/>00</text>
+  <text x="650"><animate attributeName="y" values="-10;190" dur="3.5s" begin="1.2s" repeatCount="indefinite"/>10</text>
+  <text x="750"><animate attributeName="y" values="-10;190" dur="4.8s" begin="0.8s" repeatCount="indefinite"/>01</text>
+  <text x="850"><animate attributeName="y" values="-10;190" dur="3.6s" begin="2s" repeatCount="indefinite"/>11</text>
+</g>
+
+<!-- Perspective grid -->
+<g stroke="#00f0ff" stroke-opacity=".08" stroke-width="1">
+  <line x1="450" y1="80" x2="0" y2="180"/><line x1="450" y1="80" x2="150" y2="180"/>
+  <line x1="450" y1="80" x2="300" y2="180"/><line x1="450" y1="80" x2="450" y2="180"/>
+  <line x1="450" y1="80" x2="600" y2="180"/><line x1="450" y1="80" x2="750" y2="180"/>
+  <line x1="450" y1="80" x2="900" y2="180"/>
+  <line x1="0" y1="100" x2="900" y2="100"/>
+  <line x1="0" y1="130" x2="900" y2="130"/>
+  <line x1="0" y1="160" x2="900" y2="160"/>
+</g>
+
+<!-- Footer title -->
+<text x="450" y="52" text-anchor="middle" font-family="'Courier New',monospace" font-weight="700" font-size="18" fill="#00f0ff" letter-spacing="8" filter="url(#fglow2)">
+  <animate attributeName="fill" values="#00f0ff;#ff2bd6;#f0ff00;#00f0ff" dur="6s" repeatCount="indefinite"/>
+FEBY AWIE</text>
+
+<!-- Subtitle -->
+<text x="450" y="78" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#ff2bd6" letter-spacing="3" opacity=".7">WEB DEVELOPER // DATA SCIENTIST // FULLSTACK EXPLORER</text>
+
+<!-- ASCII art divider -->
+<text x="450" y="108" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#00f0ff" opacity=".4" letter-spacing="2">╔══════════════════════════════════════════════════╗</text>
+<text x="450" y="124" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#00f0ff" opacity=".3" letter-spacing="2">║  &gt; Thanks for visiting my profile! GG WP! &lt;    ║</text>
+<text x="450" y="140" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#00f0ff" opacity=".4" letter-spacing="2">╚══════════════════════════════════════════════════╝</text>
+
+<!-- Copyright -->
+<text x="450" y="168" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#ff00ff" letter-spacing="3" opacity=".5">// SESSION TERMINATED . UNTIL NEXT TIME //</text>
 
 </svg>

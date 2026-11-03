@@ -1,41 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 52" width="900" height="52" role="img" aria-label="07 :: TOOLS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 50" width="900" height="50" role="img" aria-label="Tools">
 <defs>
-<linearGradient id="t3bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1800" y2="0" spreadMethod="reflect">
-  <stop offset="0" stop-color="#0b0814"><animate attributeName="stop-color" values="#0b0814;#160a2c;#0b0814" dur="18s" repeatCount="indefinite"/></stop>
-  <stop offset=".3" stop-color="#2d0a4e"><animate attributeName="stop-color" values="#2d0a4e;#4a148c;#2d0a4e" dur="14s" repeatCount="indefinite"/></stop>
-  <stop offset=".6" stop-color="#4a148c"><animate attributeName="stop-color" values="#4a148c;#3c096c;#5a189a;#4a148c" dur="16s" repeatCount="indefinite"/></stop>
-  <stop offset=".85" stop-color="#1a0b2e"><animate attributeName="stop-color" values="#1a0b2e;#2d0a4e;#1a0b2e" dur="12s" repeatCount="indefinite"/></stop>
-  <stop offset="1" stop-color="#0b0814"/>
-  <animateTransform attributeName="gradientTransform" type="translate" values="0 0;-810 0;0 0" dur="26s" repeatCount="indefinite"/>
-</linearGradient>
-<pattern id="t3grid" width="40" height="40" patternUnits="userSpaceOnUse">
-  <path d="M40 0H0V40" fill="none" stroke="#c77dff" stroke-opacity=".07"/>
-</pattern>
-<pattern id="t3scan" width="4" height="4" patternUnits="userSpaceOnUse">
-  <rect width="4" height="1" fill="#000" opacity=".25"/>
-  <animateTransform attributeName="patternTransform" type="translate" values="0 0;0 4" dur="3s" repeatCount="indefinite"/>
-</pattern>
-<linearGradient id="t3edge" x1="0" x2="1" y1="0" y2="0">
-  <stop offset="0" stop-color="#c77dff" stop-opacity="0"/>
-  <stop offset=".5" stop-color="#e0aaff"/>
-  <stop offset="1" stop-color="#c77dff" stop-opacity="0"/>
-</linearGradient>
-<filter id="t3glow" x="-20%" y="-50%" width="140%" height="200%">
-  <feGaussianBlur stdDeviation="4" result="b"/>
-  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-<filter id="t3glow2" x="-20%" y="-50%" width="140%" height="200%">
-  <feGaussianBlur stdDeviation="1.6" result="b"/>
+<filter id="ctg" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="2" result="b"/>
   <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
 </filter>
 </defs>
-
-<rect x="10" y="5" width="880" height="42" rx="10" fill="url(#t3bg)"/><rect x="10" y="5" width="880" height="42" rx="10" fill="url(#t3grid)"/><rect x="10" y="5" width="880" height="42" rx="10" fill="url(#t3scan)"/>
-<rect x="10" y="5" width="880" height="42" rx="10" fill="none" stroke="#c77dff" stroke-opacity=".7" filter="url(#t3glow2)">
-  <animate attributeName="stroke-opacity" values=".35;.95;.35" dur="4s" repeatCount="indefinite"/>
+<rect width="900" height="50" fill="#0a0a0a"/>
+<rect x="30" y="24" width="840" height="1" fill="#f0ff00" opacity=".15"/>
+<rect x="30" y="24" width="60" height="1" fill="#f0ff00" opacity=".8" filter="url(#ctg)">
+  <animate attributeName="x" values="30;810" dur="3s" repeatCount="indefinite"/>
 </rect>
-<rect x="10" y="5" width="5" height="42" rx="2" fill="#e0aaff"><animate attributeName="opacity" values="1;.4;1" dur="2.4s" repeatCount="indefinite"/></rect>
-<text x="34" y="32" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-size="19" font-weight="800" fill="#e0aaff" letter-spacing="3" filter="url(#t3glow2)">07 :: TOOLS</text>
-<text x="866" y="31" text-anchor="end" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-size="12" fill="#b388eb" letter-spacing="3">ALAT TEMPUR</text>
-
+<text x="450" y="30" text-anchor="middle" font-family="'Courier New',monospace" font-weight="700" font-size="14" fill="#f0ff00" letter-spacing="6" filter="url(#ctg)">⟨ TOOLS /⟩</text>
 </svg>

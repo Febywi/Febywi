@@ -1,55 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" role="img" aria-label="TECH ARSENAL">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 140" width="900" height="140" role="img" aria-label="TECH ARSENAL">
 <defs>
-<linearGradient id="s02bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1800" y2="0" spreadMethod="reflect">
-  <stop offset="0" stop-color="#0b0814"><animate attributeName="stop-color" values="#0b0814;#160a2c;#0b0814" dur="18s" repeatCount="indefinite"/></stop>
-  <stop offset=".3" stop-color="#2d0a4e"><animate attributeName="stop-color" values="#2d0a4e;#4a148c;#2d0a4e" dur="14s" repeatCount="indefinite"/></stop>
-  <stop offset=".6" stop-color="#4a148c"><animate attributeName="stop-color" values="#4a148c;#3c096c;#5a189a;#4a148c" dur="16s" repeatCount="indefinite"/></stop>
-  <stop offset=".85" stop-color="#1a0b2e"><animate attributeName="stop-color" values="#1a0b2e;#2d0a4e;#1a0b2e" dur="12s" repeatCount="indefinite"/></stop>
-  <stop offset="1" stop-color="#0b0814"/>
-  <animateTransform attributeName="gradientTransform" type="translate" values="0 0;-810 0;0 0" dur="26s" repeatCount="indefinite"/>
+<linearGradient id="s2bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="140">
+  <stop offset="0" stop-color="#0a0a0a"><animate attributeName="stop-color" values="#0a0a0a;#0d001a;#0a0a0a" dur="12s" repeatCount="indefinite"/></stop>
+  <stop offset=".5" stop-color="#0d0030"><animate attributeName="stop-color" values="#0d0030;#1a0044;#0d0030" dur="10s" repeatCount="indefinite"/></stop>
+  <stop offset="1" stop-color="#0a0a0a"/>
+  <animateTransform attributeName="gradientTransform" type="rotate" values="0 450 70;5 450 70;0 450 70;-5 450 70;0 450 70" dur="14s" repeatCount="indefinite"/>
 </linearGradient>
-<pattern id="s02grid" width="40" height="40" patternUnits="userSpaceOnUse">
-  <path d="M40 0H0V40" fill="none" stroke="#c77dff" stroke-opacity=".07"/>
+<pattern id="s2grid" width="30" height="30" patternUnits="userSpaceOnUse">
+  <path d="M30 0H0V30" fill="none" stroke="#00f0ff" stroke-opacity=".05"/>
 </pattern>
-<pattern id="s02scan" width="4" height="4" patternUnits="userSpaceOnUse">
-  <rect width="4" height="1" fill="#000" opacity=".25"/>
-  <animateTransform attributeName="patternTransform" type="translate" values="0 0;0 4" dur="3s" repeatCount="indefinite"/>
+<pattern id="s2scan" width="4" height="4" patternUnits="userSpaceOnUse">
+  <rect width="4" height="1" fill="#000" opacity=".18"/>
+  <animateTransform attributeName="patternTransform" type="translate" values="0 0;0 4" dur="2.5s" repeatCount="indefinite"/>
 </pattern>
-<linearGradient id="s02edge" x1="0" x2="1" y1="0" y2="0">
-  <stop offset="0" stop-color="#c77dff" stop-opacity="0"/>
-  <stop offset=".5" stop-color="#e0aaff"/>
-  <stop offset="1" stop-color="#c77dff" stop-opacity="0"/>
+<linearGradient id="s2edge" x1="0" x2="1" y1="0" y2="0">
+  <stop offset="0" stop-color="#00f0ff" stop-opacity="0"/>
+  <stop offset=".3" stop-color="#ff2bd6"/>
+  <stop offset=".5" stop-color="#00f0ff"/>
+  <stop offset=".7" stop-color="#ff2bd6"/>
+  <stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
 </linearGradient>
-<filter id="s02glow" x="-20%" y="-50%" width="140%" height="200%">
-  <feGaussianBlur stdDeviation="4" result="b"/>
+<filter id="s2glow" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="5" result="b"/>
   <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
 </filter>
-<filter id="s02glow2" x="-20%" y="-50%" width="140%" height="200%">
-  <feGaussianBlur stdDeviation="1.6" result="b"/>
+<filter id="s2glow2" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="2" result="b"/>
   <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
 </filter>
 </defs>
 
-<rect x="0" y="0" width="900" height="120" rx="0" fill="url(#s02bg)"/><rect x="0" y="0" width="900" height="120" rx="0" fill="url(#s02grid)"/><rect x="0" y="0" width="900" height="120" rx="0" fill="url(#s02scan)"/>
-<rect y="0" width="900" height="2" fill="url(#s02edge)"/>
-<rect y="118" width="900" height="2" fill="url(#s02edge)"/>
-<g fill="none" stroke="#c77dff" stroke-width="2" opacity=".8"><path d="M10 30V10H30"/><path d="M870 10H890V30"/><path d="M10 90V110H30"/><path d="M870 110H890V90"/></g>
-<text x="34" y="34" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-size="14" fill="#c77dff" letter-spacing="3">[ 02 ]</text>
-<text x="450" y="70" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-weight="900" font-size="46" letter-spacing="4" fill="#00f0ff" opacity="0"><animate attributeName="opacity" values="0;0;.85;0;.85;0;.85;0" keyTimes="0;.84;.85;.87;.89;.91;.93;1" dur="5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;-7 0;5 1;-4 -1;6 0;-2 0;0 0" keyTimes="0;.84;.85;.87;.89;.91;.93;1" dur="5s" repeatCount="indefinite"/>TECH ARSENAL</text><text x="450" y="70" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-weight="900" font-size="46" letter-spacing="4" fill="#ff2bd6" opacity="0"><animate attributeName="opacity" values="0;0;.85;0;.85;0;.85;0" keyTimes="0;.84;.85;.87;.89;.91;.93;1" dur="5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;7 1;-5 0;4 1;-6 0;2 0;0 0" keyTimes="0;.84;.85;.87;.89;.91;.93;1" dur="5s" repeatCount="indefinite"/>TECH ARSENAL</text><text x="450" y="70" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-weight="900" font-size="46" letter-spacing="4" fill="#e0aaff" stroke="#9d4edd" stroke-width=".8" filter="url(#s02glow)"><animate attributeName="opacity" values="1;1;.86;1;.92;1" keyTimes="0;.5;.51;.53;.55;1" dur="5s" repeatCount="indefinite"/>TECH ARSENAL</text>
-<clipPath id="s02sl1"><rect x="0" y="41.5" width="900" height="9.2"/></clipPath>
-<clipPath id="s02sl2"><rect x="0" y="60.8" width="900" height="6.4"/></clipPath>
-<g clip-path="url(#s02sl1)">
-  <text x="450" y="70" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-weight="900" font-size="46" letter-spacing="4" fill="#ffffff" opacity="0">
-    <animate attributeName="opacity" values="0;0;.9;0;.9;0;0" keyTimes="0;.4;.41;.43;.45;.47;1" dur="5s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;14 0;-10 0;12 0;0 0;0 0" keyTimes="0;.4;.41;.43;.45;.47;1" dur="5s" repeatCount="indefinite"/>
-    TECH ARSENAL</text>
+<!-- Background -->
+<rect width="900" height="140" fill="url(#s2bg)"/>
+<rect width="900" height="140" fill="url(#s2grid)"/>
+<rect width="900" height="140" fill="url(#s2scan)"/>
+
+<!-- Edge lines -->
+<rect y="0" width="900" height="2" fill="url(#s2edge)"/>
+<rect y="138" width="900" height="2" fill="url(#s2edge)"/>
+
+<!-- Running borders -->
+<rect y="0" width="100" height="2" fill="#00f0ff" opacity=".9" filter="url(#s2glow2)">
+  <animate attributeName="x" values="-100;900" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect y="138" width="100" height="2" fill="#ff2bd6" opacity=".9" filter="url(#s2glow2)">
+  <animate attributeName="x" values="900;-100" dur="3.5s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Corner brackets -->
+<g fill="none" stroke="#00f0ff" stroke-width="2" opacity=".7">
+  <path d="M10 30V10H30"/><path d="M870 10H890V30"/>
+  <path d="M10 110V130H30"/><path d="M870 130H890V110"/>
 </g>
-<g clip-path="url(#s02sl2)">
-  <text x="450" y="70" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-weight="900" font-size="46" letter-spacing="4" fill="#e0aaff" opacity="0">
-    <animate attributeName="opacity" values="0;0;.9;0;.9;0;0" keyTimes="0;.4;.41;.43;.45;.47;1" dur="5s" begin="1.6s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-16 0;12 0;-8 0;0 0;0 0" keyTimes="0;.4;.41;.43;.45;.47;1" dur="5s" begin="1.6s" repeatCount="indefinite"/>
-    TECH ARSENAL</text>
+
+<!-- Section number -->
+<text x="34" y="34" font-family="'Courier New',monospace" font-size="13" fill="#ff2bd6" letter-spacing="3">[ 02 ]</text>
+
+<!-- Falling code in background -->
+<g font-family="'Courier New',monospace" font-size="10" fill="#00f0ff" opacity=".15">
+  <text x="70"><animate attributeName="y" values="-10;150" dur="4s" begin="0.2s" repeatCount="indefinite"/>npm</text>
+  <text x="200"><animate attributeName="y" values="-10;150" dur="3.5s" begin="1s" repeatCount="indefinite"/>pip</text>
+  <text x="700"><animate attributeName="y" values="-10;150" dur="4.2s" begin="0.5s" repeatCount="indefinite"/>git</text>
+  <text x="820"><animate attributeName="y" values="-10;150" dur="3.8s" begin="1.5s" repeatCount="indefinite"/>php</text>
 </g>
-<text x="450" y="102" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#b388eb" letter-spacing="4">// STACK . FRAMEWORK . TOOLS . PROJECTS</text>
+
+<!-- GLITCH TITLE: "TECH ARSENAL" -->
+<!-- Cyan glitch layer -->
+<text x="450" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-weight="900" font-size="48" letter-spacing="5" fill="#00f0ff" opacity="0">
+  <animate attributeName="opacity" values="0;0;.7;0;.7;0;.7;0" keyTimes="0;.84;.85;.87;.89;.91;.93;1" dur="4.5s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-6 0;4 1;-3 -1;5 0;-2 0;0 0" keyTimes="0;.84;.85;.87;.89;.91;.93;1" dur="4.5s" repeatCount="indefinite"/>
+TECH ARSENAL</text>
+
+<!-- Magenta glitch layer -->
+<text x="450" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-weight="900" font-size="48" letter-spacing="5" fill="#ff2bd6" opacity="0">
+  <animate attributeName="opacity" values="0;0;.7;0;.7;0;.7;0" keyTimes="0;.84;.85;.87;.89;.91;.93;1" dur="4.5s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0;0 0;6 1;-4 0;3 1;-5 0;2 0;0 0" keyTimes="0;.84;.85;.87;.89;.91;.93;1" dur="4.5s" repeatCount="indefinite"/>
+TECH ARSENAL</text>
+
+<!-- Main title -->
+<text x="450" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-weight="900" font-size="48" letter-spacing="5" fill="#ffffff" stroke="#ff00ff" stroke-width=".4" filter="url(#s2glow)">
+  <animate attributeName="opacity" values="1;1;.85;1;.9;1" keyTimes="0;.5;.51;.53;.55;1" dur="4.5s" repeatCount="indefinite"/>
+TECH ARSENAL</text>
+
+<!-- Glitch slice -->
+<clipPath id="s2sl"><rect x="0" y="58" width="900" height="10"/></clipPath>
+<g clip-path="url(#s2sl)">
+  <text x="450" y="82" text-anchor="middle" font-family="'Courier New',monospace" font-weight="900" font-size="48" letter-spacing="5" fill="#f0ff00" opacity="0">
+    <animate attributeName="opacity" values="0;0;.8;0;.8;0;0" keyTimes="0;.4;.41;.43;.45;.47;1" dur="4.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;12 0;-8 0;10 0;0 0;0 0" keyTimes="0;.4;.41;.43;.45;.47;1" dur="4.5s" repeatCount="indefinite"/>
+  TECH ARSENAL</text>
+</g>
+
+<!-- Subtitle -->
+<text x="450" y="116" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="#00f0ff" letter-spacing="4" opacity=".7">// STACK . FRAMEWORK . TOOLS . PROJECTS</text>
 
 </svg>

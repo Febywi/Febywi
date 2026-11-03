@@ -1,39 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 18" width="900" height="18" role="img" aria-label="divider">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 20" width="900" height="20" role="img" aria-label="divider">
 <defs>
-<linearGradient id="dbg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1800" y2="0" spreadMethod="reflect">
-  <stop offset="0" stop-color="#0b0814"><animate attributeName="stop-color" values="#0b0814;#160a2c;#0b0814" dur="18s" repeatCount="indefinite"/></stop>
-  <stop offset=".3" stop-color="#2d0a4e"><animate attributeName="stop-color" values="#2d0a4e;#4a148c;#2d0a4e" dur="14s" repeatCount="indefinite"/></stop>
-  <stop offset=".6" stop-color="#4a148c"><animate attributeName="stop-color" values="#4a148c;#3c096c;#5a189a;#4a148c" dur="16s" repeatCount="indefinite"/></stop>
-  <stop offset=".85" stop-color="#1a0b2e"><animate attributeName="stop-color" values="#1a0b2e;#2d0a4e;#1a0b2e" dur="12s" repeatCount="indefinite"/></stop>
-  <stop offset="1" stop-color="#0b0814"/>
-  <animateTransform attributeName="gradientTransform" type="translate" values="0 0;-810 0;0 0" dur="26s" repeatCount="indefinite"/>
-</linearGradient>
-<pattern id="dgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-  <path d="M40 0H0V40" fill="none" stroke="#c77dff" stroke-opacity=".07"/>
-</pattern>
-<pattern id="dscan" width="4" height="4" patternUnits="userSpaceOnUse">
-  <rect width="4" height="1" fill="#000" opacity=".25"/>
-  <animateTransform attributeName="patternTransform" type="translate" values="0 0;0 4" dur="3s" repeatCount="indefinite"/>
-</pattern>
 <linearGradient id="dedge" x1="0" x2="1" y1="0" y2="0">
-  <stop offset="0" stop-color="#c77dff" stop-opacity="0"/>
-  <stop offset=".5" stop-color="#e0aaff"/>
-  <stop offset="1" stop-color="#c77dff" stop-opacity="0"/>
+  <stop offset="0" stop-color="#00f0ff" stop-opacity="0"/>
+  <stop offset=".3" stop-color="#ff2bd6"/>
+  <stop offset=".5" stop-color="#00f0ff"/>
+  <stop offset=".7" stop-color="#ff2bd6"/>
+  <stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
 </linearGradient>
 <filter id="dglow" x="-20%" y="-50%" width="140%" height="200%">
-  <feGaussianBlur stdDeviation="4" result="b"/>
-  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-<filter id="dglow2" x="-20%" y="-50%" width="140%" height="200%">
-  <feGaussianBlur stdDeviation="1.6" result="b"/>
+  <feGaussianBlur stdDeviation="2" result="b"/>
   <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
 </filter>
 </defs>
 
-<rect y="8" width="900" height="2" fill="url(#dedge)" opacity=".9"/>
-<rect y="8" width="120" height="2" fill="#fff" opacity=".9" filter="url(#dglow2)">
-  <animate attributeName="x" values="-120;900" dur="4s" repeatCount="indefinite"/>
+<!-- Main divider line -->
+<rect y="9" width="900" height="2" fill="url(#dedge)" opacity=".8"/>
+
+<!-- Running light effect - forward -->
+<rect y="9" width="120" height="2" fill="#00f0ff" opacity=".9" filter="url(#dglow)">
+  <animate attributeName="x" values="-120;900" dur="2.5s" repeatCount="indefinite"/>
 </rect>
-<rect x="436" y="4" width="28" height="10" fill="#0b0814" stroke="#c77dff" transform="rotate(45 450 9)" opacity=".0"/>
+
+<!-- Running light effect - backward (different color) -->
+<rect y="9" width="80" height="2" fill="#ff2bd6" opacity=".7" filter="url(#dglow)">
+  <animate attributeName="x" values="900;-80" dur="3s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Center diamond -->
+<rect x="440" y="5" width="10" height="10" rx="1" fill="#0a0a0a" stroke="#00f0ff" stroke-width="1" transform="rotate(45 445 10)">
+  <animate attributeName="stroke" values="#00f0ff;#ff2bd6;#f0ff00;#00f0ff" dur="3s" repeatCount="indefinite"/>
+</rect>
 
 </svg>

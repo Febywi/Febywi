@@ -1,4 +1,4 @@
-name: generate pacman + stars
+name: generate contribution games + stars
 
 on:
   schedule:
@@ -16,11 +16,11 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - name: generate pacman contribution graph
+      - name: generate all contribution games
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-          games: 'pacman'
+          games: 'pacman,breakout,galaga,puzzle-bobble,bomberman,minesweeper,snake,tetris'
 
       - name: hitung total stars (buat badge README)
         env:
@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir -p dist
           STARS=$(gh api --paginate "users/${{ github.repository_owner }}/repos?per_page=100&type=owner" --jq '.[].stargazers_count' | awk '{s+=$1} END {print s+0}')
-          echo "{\"schemaVersion\":1,\"label\":\"Total Stars\",\"message\":\"$STARS\",\"color\":\"9d4edd\",\"namedLogo\":\"github\",\"logoColor\":\"c77dff\"}" > dist/stars.json
+          echo "{\"schemaVersion\":1,\"label\":\"Total Stars\",\"message\":\"$STARS\",\"color\":\"00f0ff\",\"namedLogo\":\"github\",\"logoColor\":\"ff2bd6\"}" > dist/stars.json
           cat dist/stars.json
 
       - name: push hasil ke branch output
