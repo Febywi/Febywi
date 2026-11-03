@@ -61,9 +61,6 @@
 <!-- 8. PROJECT / REPO PILIHAN (bentuk card) -->
 <img src="assets/card-repo.svg" width="100%" alt="Featured Repositories" />
 <p>
-  <a href="https://github.com/Febywi/wiistore">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Febywi&repo=wiistore&bg_color=0b0814&title_color=c77dff&text_color=e0aaff&icon_color=9d4edd&border_color=7b2cbf" alt="wiistore" />
-  </a>
   <a href="https://github.com/Febywi/si-lab-kewirausahaan">
     <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Febywi&repo=si-lab-kewirausahaan&bg_color=0b0814&title_color=c77dff&text_color=e0aaff&icon_color=9d4edd&border_color=7b2cbf" alt="si-lab-kewirausahaan" />
   </a>
