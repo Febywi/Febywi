@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 178" width="900" height="178" role="img" aria-label="Hallo saya Feby Awie - Web Development, Data Scientist">
+<defs>
+<linearGradient id="ibg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1800" y2="0" spreadMethod="reflect">
+  <stop offset="0" stop-color="#0b0814"><animate attributeName="stop-color" values="#0b0814;#160a2c;#0b0814" dur="18s" repeatCount="indefinite"/></stop>
+  <stop offset=".3" stop-color="#2d0a4e"><animate attributeName="stop-color" values="#2d0a4e;#4a148c;#2d0a4e" dur="14s" repeatCount="indefinite"/></stop>
+  <stop offset=".6" stop-color="#4a148c"><animate attributeName="stop-color" values="#4a148c;#3c096c;#5a189a;#4a148c" dur="16s" repeatCount="indefinite"/></stop>
+  <stop offset=".85" stop-color="#1a0b2e"><animate attributeName="stop-color" values="#1a0b2e;#2d0a4e;#1a0b2e" dur="12s" repeatCount="indefinite"/></stop>
+  <stop offset="1" stop-color="#0b0814"/>
+  <animateTransform attributeName="gradientTransform" type="translate" values="0 0;-810 0;0 0" dur="26s" repeatCount="indefinite"/>
+</linearGradient>
+<pattern id="igrid" width="40" height="40" patternUnits="userSpaceOnUse">
+  <path d="M40 0H0V40" fill="none" stroke="#c77dff" stroke-opacity=".07"/>
+</pattern>
+<pattern id="iscan" width="4" height="4" patternUnits="userSpaceOnUse">
+  <rect width="4" height="1" fill="#000" opacity=".25"/>
+  <animateTransform attributeName="patternTransform" type="translate" values="0 0;0 4" dur="3s" repeatCount="indefinite"/>
+</pattern>
+<linearGradient id="iedge" x1="0" x2="1" y1="0" y2="0">
+  <stop offset="0" stop-color="#c77dff" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#e0aaff"/>
+  <stop offset="1" stop-color="#c77dff" stop-opacity="0"/>
+</linearGradient>
+<filter id="iglow" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="4" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="iglow2" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="1.6" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<rect x="0" y="0" width="900" height="178" rx="0" fill="url(#ibg)"/><rect x="0" y="0" width="900" height="178" rx="0" fill="url(#igrid)"/><rect x="0" y="0" width="900" height="178" rx="0" fill="url(#iscan)"/>
+<rect y="0" width="900" height="2" fill="url(#iedge)" opacity=".8"/>
+<rect y="176" width="900" height="2" fill="url(#iedge)" opacity=".8"/>
+
+<clipPath id="ic1"><rect x="235.0" y="34" height="42" width="0">
+  <animate attributeName="width" values="0.0;18.0;36.0;54.0;72.0;90.0;108.0;126.0;144.0;162.0;180.0;198.0;216.0;234.0;252.0;270.0;288.0;306.0;324.0;342.0;360.0" keyTimes="0.00000;0.04762;0.09524;0.14286;0.19048;0.23810;0.28571;0.33333;0.38095;0.42857;0.47619;0.52381;0.57143;0.61905;0.66667;0.71429;0.76190;0.80952;0.85714;0.90476;0.95238" calcMode="discrete" dur="1.785s" begin="0.5s" fill="freeze"/>
+</rect></clipPath>
+<g clip-path="url(#ic1)">
+  <text x="235.0" y="64" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-weight="800" font-size="30" fill="#e0aaff" textLength="360.0" lengthAdjust="spacing" filter="url(#iglow2)">Hallo saya Feby Awie</text>
+</g>
+<rect y="37" width="3" height="30" fill="#ff2bd6" opacity="0">
+  <animate attributeName="opacity" values="1" dur="0.01s" begin="0.5s" fill="freeze"/>
+  <animate attributeName="x" values="235.0;253.0;271.0;289.0;307.0;325.0;343.0;361.0;379.0;397.0;415.0;433.0;451.0;469.0;487.0;505.0;523.0;541.0;559.0;577.0;595.0" keyTimes="0.00000;0.04762;0.09524;0.14286;0.19048;0.23810;0.28571;0.33333;0.38095;0.42857;0.47619;0.52381;0.57143;0.61905;0.66667;0.71429;0.76190;0.80952;0.85714;0.90476;0.95238" calcMode="discrete" dur="1.785s" begin="0.5s" fill="freeze"/>
+</rect>
+<rect y="37" width="3" height="30" fill="#e0aaff" opacity="0" x="595.0">
+  <animate attributeName="opacity" values="1;0" keyTimes="0;.5" calcMode="discrete" dur="1s" begin="2.33s" repeatCount="indefinite"/>
+</rect>
+
+<text x="607.0" y="64" font-size="32" opacity="0">👋
+  <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.2s" begin="2.29s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="rotate" values="0 629 68;24 629 68;-10 629 68;24 629 68;-6 629 68;18 629 68;0 629 68;0 629 68" keyTimes="0;.12;.24;.36;.48;.6;.72;1" dur="2.2s" begin="2.29s" repeatCount="indefinite"/>
+</text>
+<text x="647.0" y="62" font-size="22" opacity="0">💜
+  <animate attributeName="opacity" values="0;1;.35;1" keyTimes="0;.2;.6;1" dur="1.6s" begin="2.29s" repeatCount="indefinite"/>
+</text>
+<text x="201.0" y="58" font-size="20" opacity="0">✨
+  <animate attributeName="opacity" values="0;1;.2;1;0" keyTimes="0;.15;.5;.8;1" dur="2.4s" begin="2.29s" repeatCount="indefinite"/>
+</text>
+
+<clipPath id="ira"><rect x="337.5" y="102" height="36" width="0">
+  <animate attributeName="width" values="0.00;15.00;30.00;45.00;60.00;75.00;90.00;105.00;120.00;135.00;150.00;165.00;180.00;195.00;210.00;225.00;210.00;195.00;180.00;165.00;150.00;135.00;120.00;105.00;90.00;75.00;60.00;45.00;30.00;15.00;0.00" keyTimes="0.00000;0.05780;0.06647;0.07514;0.08382;0.09249;0.10116;0.10983;0.11850;0.12717;0.13584;0.14451;0.15318;0.16185;0.17052;0.17919;0.39114;0.39595;0.40077;0.40559;0.41040;0.41522;0.42004;0.42486;0.42967;0.43449;0.43931;0.44412;0.44894;0.45376;0.45857" calcMode="discrete" dur="10.38s" repeatCount="indefinite"/>
+</rect></clipPath>
+<g clip-path="url(#ira)">
+  <text x="337.5" y="126" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-weight="700" font-size="24" fill="#c77dff" textLength="225.0" lengthAdjust="spacing" filter="url(#iglow2)">Web Development</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.05780;0.45954" calcMode="discrete" dur="10.38s" repeatCount="indefinite"/>
+  <rect y="104" width="3" height="24" fill="#00f0ff" x="337.5">
+    <animate attributeName="x" values="337.50;352.50;367.50;382.50;397.50;412.50;427.50;442.50;457.50;472.50;487.50;502.50;517.50;532.50;547.50;562.50;547.50;532.50;517.50;502.50;487.50;472.50;457.50;442.50;427.50;412.50;397.50;382.50;367.50;352.50;337.50" keyTimes="0.00000;0.05780;0.06647;0.07514;0.08382;0.09249;0.10116;0.10983;0.11850;0.12717;0.13584;0.14451;0.15318;0.16185;0.17052;0.17919;0.39114;0.39595;0.40077;0.40559;0.41040;0.41522;0.42004;0.42486;0.42967;0.43449;0.43931;0.44412;0.44894;0.45376;0.45857" calcMode="discrete" dur="10.38s" repeatCount="indefinite"/>
+  </rect>
+</g>
+<clipPath id="irb"><rect x="345.0" y="102" height="36" width="0">
+  <animate attributeName="width" values="0.00;15.00;30.00;45.00;60.00;75.00;90.00;105.00;120.00;135.00;150.00;165.00;180.00;195.00;210.00;195.00;180.00;165.00;150.00;135.00;120.00;105.00;90.00;75.00;60.00;45.00;30.00;15.00;0.00" keyTimes="0.00000;0.52601;0.53468;0.54335;0.55202;0.56069;0.56936;0.57803;0.58671;0.59538;0.60405;0.61272;0.62139;0.63006;0.63873;0.85067;0.85549;0.86031;0.86513;0.86994;0.87476;0.87958;0.88439;0.88921;0.89403;0.89884;0.90366;0.90848;0.91329" calcMode="discrete" dur="10.38s" repeatCount="indefinite"/>
+</rect></clipPath>
+<g clip-path="url(#irb)">
+  <text x="345.0" y="126" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-weight="700" font-size="24" fill="#d8b4fe" textLength="210.0" lengthAdjust="spacing" filter="url(#iglow2)">Data Scientist</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.52601;0.91426" calcMode="discrete" dur="10.38s" repeatCount="indefinite"/>
+  <rect y="104" width="3" height="24" fill="#00f0ff" x="345.0">
+    <animate attributeName="x" values="345.00;360.00;375.00;390.00;405.00;420.00;435.00;450.00;465.00;480.00;495.00;510.00;525.00;540.00;555.00;540.00;525.00;510.00;495.00;480.00;465.00;450.00;435.00;420.00;405.00;390.00;375.00;360.00;345.00" keyTimes="0.00000;0.52601;0.53468;0.54335;0.55202;0.56069;0.56936;0.57803;0.58671;0.59538;0.60405;0.61272;0.62139;0.63006;0.63873;0.85067;0.85549;0.86031;0.86513;0.86994;0.87476;0.87958;0.88439;0.88921;0.89403;0.89884;0.90366;0.90848;0.91329" calcMode="discrete" dur="10.38s" repeatCount="indefinite"/>
+  </rect>
+</g>
+<text x="450" y="162" text-anchor="middle" font-family="'Courier New','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace" font-size="12" fill="#9d4edd" letter-spacing="4" opacity=".8">&gt;&gt;&gt; BUILD . CODE . ANALYZE . REPEAT &lt;&lt;&lt;</text>
+
+</svg>
